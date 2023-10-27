@@ -1,4 +1,4 @@
-import { BackgroundImage } from "./components/BackgroundImage";
+import { Background } from "./components";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         alt="Folha da base"
       /> */}
 
-      <BackgroundImage />
+      <Background />
     </main>
   );
 }
