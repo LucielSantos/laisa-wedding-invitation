@@ -20,21 +20,21 @@ export default function Home() {
       iconAlt: "Pin icon",
       label: "LOCAL DA CELEBRAÇÃO",
       href: mapLink,
-      ariaLabel: "Acessar local da celebração",
+      ariaLabel: "LOCAL DA CELEBRAÇÃO",
     },
     {
       iconSrc: checkSrc,
       iconAlt: "Check icon",
       label: "CONFIRMAÇÃO DE PRESENÇA",
       href: presenceLink,
-      ariaLabel: "Realizar confirmação de presença",
+      ariaLabel: "CONFIRMAÇÃO DE PRESENÇA",
     },
     {
       iconSrc: giftSrc,
       iconAlt: "Gift icon",
       label: "LISTA DE PRESENTES",
       href: giftLink,
-      ariaLabel: "Acessar a lista de presentes",
+      ariaLabel: "LISTA DE PRESENTES",
     },
   ];
 
