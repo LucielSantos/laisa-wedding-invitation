@@ -21,6 +21,7 @@ export default function Home() {
       label: "LOCAL DA CELEBRAÇÃO",
       href: mapLink,
       ariaLabel: "LOCAL DA CELEBRAÇÃO",
+      id: "celebrationLocation",
     },
     {
       iconSrc: checkSrc,
@@ -28,6 +29,7 @@ export default function Home() {
       label: "CONFIRMAÇÃO DE PRESENÇA",
       href: presenceLink,
       ariaLabel: "CONFIRMAÇÃO DE PRESENÇA",
+      id: "presenceConfirmation",
     },
     {
       iconSrc: giftSrc,
@@ -35,6 +37,7 @@ export default function Home() {
       label: "LISTA DE PRESENTES",
       href: giftLink,
       ariaLabel: "LISTA DE PRESENTES",
+      id: "giftList",
     },
   ];
 
@@ -67,6 +70,7 @@ export default function Home() {
               href={button.href}
               key={button.iconAlt}
               aria-label={button.ariaLabel}
+              aria-labelledby={button.id}
               className="flex flex-col flex-1 justify-between items-center"
             >
               <Button className="mx-4">
@@ -77,6 +81,7 @@ export default function Home() {
                 key={button.iconAlt}
                 role="link"
                 aria-label={button.ariaLabel}
+                id={button.id}
                 className="text-xs text-center mt-2"
               >
                 {button.label}
