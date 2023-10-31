@@ -63,6 +63,7 @@ export default function Home() {
           {buttons.map((button) => (
             <a
               target="_blank"
+              role="link"
               href={button.href}
               key={button.iconAlt}
               aria-label={button.ariaLabel}
@@ -72,7 +73,12 @@ export default function Home() {
                 <Image src={button.iconSrc} alt={button.iconAlt} />
               </Button>
 
-              <span key={button.iconAlt} className="text-xs text-center mt-2">
+              <span
+                key={button.iconAlt}
+                role="link"
+                aria-label={button.ariaLabel}
+                className="text-xs text-center mt-2"
+              >
                 {button.label}
               </span>
             </a>
