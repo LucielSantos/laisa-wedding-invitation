@@ -56,11 +56,11 @@ export default function Home() {
 
         <p className="text-xl mt-4">Sítio das Curicacas - Torres</p>
 
-        <div className="grid mt-8 gap-2 grid-cols-3">
+        <div className="grid mt-8 gap-2 grid-cols-3 max-w-xs self-center">
           {buttons.map((button) => (
             <div
               key={button.iconAlt}
-              className="flex flex-col flex-1 justify-between"
+              className="flex flex-col flex-1 justify-between items-center"
             >
               <Button className="mx-4" href={button.href}>
                 <Image src={button.iconSrc} alt={button.iconAlt} />
