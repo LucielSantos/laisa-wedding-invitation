@@ -1,15 +1,13 @@
 import { PropsWithChildren } from "react";
 
-type Props = PropsWithChildren<{ className?: string; href?: string }>;
+type Props = PropsWithChildren<{ className?: string }>;
 
-export const Button = ({ children, className, href }: Props) => {
+export const Button = ({ children, className }: Props) => {
   return (
-    <a
-      href={href}
-      target="_blank"
+    <div
       className={`bg-indigo-500 rounded-full p-2.5 cursor-pointer w-[62px] h-[62px] ${className}`}
     >
       {children}
-    </a>
+    </div>
   );
 };

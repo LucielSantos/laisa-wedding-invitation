@@ -20,18 +20,21 @@ export default function Home() {
       iconAlt: "Pin icon",
       label: "LOCAL DA CELEBRAÇÃO",
       href: mapLink,
+      ariaLabel: "Acessar local da celebração",
     },
     {
       iconSrc: checkSrc,
       iconAlt: "Check icon",
       label: "CONFIRMAÇÃO DE PRESENÇA",
       href: presenceLink,
+      ariaLabel: "Realizar confirmação de presença",
     },
     {
       iconSrc: giftSrc,
       iconAlt: "Gift icon",
       label: "LISTA DE PRESENTES",
       href: giftLink,
+      ariaLabel: "Acessar a lista de presentes",
     },
   ];
 
@@ -62,9 +65,10 @@ export default function Home() {
               target="_blank"
               href={button.href}
               key={button.iconAlt}
+              aria-label={button.ariaLabel}
               className="flex flex-col flex-1 justify-between items-center"
             >
-              <Button className="mx-4" href={button.href}>
+              <Button className="mx-4">
                 <Image src={button.iconSrc} alt={button.iconAlt} />
               </Button>
 
