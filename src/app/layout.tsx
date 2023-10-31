@@ -24,8 +24,8 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <title>{metadata.title as string}</title>
-
         <meta name="description" content={metadata.description as string} />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
 
       <body className={`${cormorant.className} text-brown-500`}>
