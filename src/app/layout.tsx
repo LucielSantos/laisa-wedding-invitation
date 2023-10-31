@@ -22,6 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <head>
+        <title>{metadata.title as string}</title>
+
+        <meta name="description" content={metadata.description as string} />
+      </head>
+
       <body className={`${cormorant.className} text-brown-500`}>
         {children}
       </body>
