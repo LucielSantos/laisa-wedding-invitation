@@ -5,7 +5,7 @@ import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-primary",
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${cormorant.className} `}>{children}</body>
+      <body className={`${cormorant.className} text-brown-500`}>
+        {children}
+      </body>
     </html>
   );
 }
