@@ -58,7 +58,9 @@ export default function Home() {
 
         <div className="grid mt-8 gap-2 grid-cols-3 max-w-xs self-center">
           {buttons.map((button) => (
-            <div
+            <a
+              target="_blank"
+              href={button.href}
               key={button.iconAlt}
               className="flex flex-col flex-1 justify-between items-center"
             >
@@ -69,7 +71,7 @@ export default function Home() {
               <span key={button.iconAlt} className="text-xs text-center mt-2">
                 {button.label}
               </span>
-            </div>
+            </a>
           ))}
         </div>
 
